@@ -1,1 +1,4 @@
-export {default as Avatar} from "./Avatar"
+import Avatar from "./Avatar";
+import StackedAvatars from "./StackedAvatar";
+
+export { Avatar as default, StackedAvatars };
