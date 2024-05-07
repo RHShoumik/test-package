@@ -3,7 +3,6 @@
     "registry": "https://npm.pkg.github.com/@RHShoumik"
   },
   "name": "@RHShoumik/test-package",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "main": "dist/index.cjs.js",
