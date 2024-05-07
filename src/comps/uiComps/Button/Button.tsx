@@ -72,7 +72,7 @@ const Button = React.forwardRef((props: ButtonProps, ref) => {
     text = "Button",
     className = "",
     disabled = false,
-    onClick = (item: ButtonProps) => {},
+    onClick = () => {},
     rounded = false,
     btnColor = "primary",
     btnSize = "md",

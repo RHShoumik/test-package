@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useState } from "react";
 import ArrowDropDown from "../Icons/SVG/ArrowDropDown";
 type DropdownCustomProps = {
   options: {

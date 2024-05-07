@@ -36,7 +36,7 @@ type DropdownProps = CompBaseProps & {
 };
 const groupByKey = (children: ReactNode) => {
   const items: any[] = [];
-  Children.map(children, (child, index) => {
+  Children.map(children, (child) => {
     items.push(child);
   });
 
@@ -67,7 +67,7 @@ function Dropdown(props: DropdownProps) {
     customButton,
     className,
     btnIconClassName,
-    onSelect = (value: any, index: number, item: DropdownItemProps) => {},
+    onSelect = () => {},
   } = props;
 
   const arrayChildren = Children.toArray(children);
@@ -92,7 +92,7 @@ function Dropdown(props: DropdownProps) {
               {({ active }) => (
                 <div
                   key={index}
-                  onClick={(e) => {
+                  onClick={() => {
                     onSelect(item.props.value, index, item.props);
                   }}
                   className={active ? "" : ""}

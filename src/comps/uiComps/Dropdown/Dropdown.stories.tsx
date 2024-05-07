@@ -15,11 +15,11 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {},
 } as Meta<typeof Dropdown>;
-const baseArgs = {
-  btnColor: "primary",
-  btnSize: "md",
-  fillType: "solid",
-};
+// const baseArgs = {
+//   btnColor: "primary",
+//   btnSize: "md",
+//   fillType: "solid",
+// };
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: StoryFn<typeof Dropdown> = (args) => (
   <Dropdown {...args}>
