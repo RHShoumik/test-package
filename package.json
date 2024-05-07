@@ -1,8 +1,8 @@
 {
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@{RHShoumik}"
+    "registry": "https://npm.pkg.github.com/@RHShoumik"
   },
-  "name": "@{RHShoumik}/{test-package}",
+  "name": "@RHShoumik/test-package",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -19,7 +19,18 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'"
+    "prepare": "husky install",
+    "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
+    "test": "vitest run",
+    "test-watch": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run format",
+      "npm run lint",
+      "npm run test"
+    ]
   },
   "dependencies": {
     "@headlessui/react": "^1.7.19",
@@ -41,6 +52,8 @@
     "@storybook/react": "^8.0.9",
     "@storybook/react-vite": "^8.0.9",
     "@storybook/test": "^8.0.9",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.6",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -54,6 +67,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "eslint-plugin-storybook": "^0.8.0",
+    "husky": "^9.0.11",
+    "jsdom": "^24.0.0",
     "lint-staged": "^15.2.2",
     "postcss": "^8.4.38",
     "prettier": "^3.2.5",
@@ -62,6 +77,7 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",
-    "vite-plugin-dts": "^3.9.1"
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.6.0"
   }
 }
