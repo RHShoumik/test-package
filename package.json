@@ -1,6 +1,6 @@
 {
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@RHShoumik"
+    "registry": "https://registry.npmjs.org"
   },
   "name": "@rhshoumik/test-package",
   "version": "0.0.0",
