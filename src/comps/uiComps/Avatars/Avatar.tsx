@@ -136,7 +136,7 @@ const Avatar: React.FC<IAvatar> = ({
   }
 
   return (
-    <span className={`relative inline-block ${disabled && "opacity-40"}`}>
+    <span role="avatar" className={`relative inline-block ${disabled && "opacity-40"}`}>
       {icon && icon ? (
         <AvatarWithIcon className={className} icon={icon} size={size} />
       ) : (

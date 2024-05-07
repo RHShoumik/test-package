@@ -108,7 +108,7 @@ function Dropdown(props: DropdownProps) {
     );
   }
   return (
-    <div className={`${className} relative inline-block text-left `}>
+    <div role="dropdown" className={`${className} relative inline-block text-left `}>
       <Menu as="div" className="relative inline-block text-left">
         <Menu.Button className="flex">
           {customButton ? (
