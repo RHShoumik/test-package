@@ -2,7 +2,7 @@ import { StoryFn, Meta } from "@storybook/react";
 import Dropdown from "./Dropdown";
 import { UserCircleIcon, UserIcon } from "@heroicons/react/16/solid";
 import DropdownItem from "./DropdownItem";
-import { Avatar } from "../Avatars";
+import Avatar from "../Avatars";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
