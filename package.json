@@ -3,7 +3,7 @@
     "registry": "https://registry.npmjs.org"
   },
   "name": "@rhshoumik/test-package",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "RHShoumik",
   "license": "ISC",
   "type": "module",

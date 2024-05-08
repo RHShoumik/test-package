@@ -1,6 +1,6 @@
 import "./App.css";
 import IconApple from "./comps/icons/IconApple";
-import Avatar from "./comps/uiComps/Avatars";
+import { Avatar } from "./comps/uiComps/Avatars";
 import Button from "./comps/uiComps/Button/Button";
 import Dropdown from "./comps/uiComps/Dropdown/Dropdown";
 import DropdownItem from "./comps/uiComps/Dropdown/DropdownItem";
