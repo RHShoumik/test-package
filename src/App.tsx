@@ -1,4 +1,5 @@
 import "./App.css";
+import { Test1 } from "./comps";
 import IconApple from "./comps/icons/IconApple";
 import { Avatar } from "./comps/uiComps/Avatars";
 import Button from "./comps/uiComps/Button/Button";
@@ -35,6 +36,7 @@ function App() {
         <DropdownItem name="Hello World" value={1} />
         <DropdownItem name="Lorem Ipsum" value={2} />
       </Dropdown>
+      <Test1/>
     </>
   );
 }

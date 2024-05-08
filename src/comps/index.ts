@@ -1,3 +1,5 @@
 // export * from "./uiComps/Avatars"
 export * from "./uiComps/Button"
 export * from "./uiComps/Dropdown"
+export * from "./uiComps/Avatars"
+export * from "./uiComps/Test1"
