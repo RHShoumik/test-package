@@ -1,8 +1,10 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite'
-// import react from "@vitejs/plugin-react-swc";
+import react from '@vitejs/plugin-react-swc'
 import dts from 'vite-plugin-dts'
-import { peerDependencies } from "./package.json";
+import { peerDependencies } from './package.json'
+import tailwindcss from 'tailwindcss'
+
 // https://vitejs.dev/config/
 export default defineConfig({
   test: {
@@ -10,8 +12,12 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './setupTests.ts',
   },
-  // plugins: [react()],
-  plugins: [dts()],
+  plugins: [react(), dts()],
+  css: {
+    postcss: {
+      plugins: [tailwindcss],
+    },
+  },
   resolve: {
     alias: {
       '@/': '/src/',
