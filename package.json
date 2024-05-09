@@ -17,6 +17,7 @@
     "prepare": "npm run build",
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:css": "tailwindcss build --input src/index.css -o src/css/style.css",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
@@ -80,8 +81,5 @@
     "vite": "^5.2.0",
     "vite-plugin-dts": "^3.9.1",
     "vitest": "^1.6.0"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0"
   }
 }
